@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jersey Designer</title>
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <form>
+      <h2>NBA Jersey Background Maker</h2>
+      <p>Need a cool, custom, hoops-inspired background? You've come to the right place.</p>
+      <p>Below, select your desired jersey from the list, then enter the custom name and number. When you've selected both, click submit!</p>
+      <label for="jerseyType">Jersey Type</label>
+      <select name="jerseyType" id="jerseyType">
+        <option value="default">Pick A Jersey</option>
+        <option value="ATLAssBack">ATL - Association</option>
+        <option value="ATLIcoBack">ATL - Icon</option>
+        <option value="ATLStaBack">ATL - Statement</option>
+        <option value="ATLCitBack">ATL - City (2025-26)</option>
+        <option value="BOSAssBack">BOS - Association</option>
+        <option value="BOSIcoBack">BOS - Icon</option>
+        <option value="BOSStaBack">BOS - Statement</option>
+        <option value="BOSCitBack">BOS - City (2025-26)</option>
+        <option value="BKNAssBack">BKN - Association</option>
+        <option value="BKNIcoBack">BKN - Icon</option>
+        <option value="BKNStaBack">BKN - Statement</option>
+        <option value="BKNCitBack">BKN - City (2025-26)</option>
+        <option value="CHAAssBack">CHA Association</option>
+        <option value="CHAIcoBack">CHA Icon</option>
+        <option value="CHAStaBack">CHA Statement</option>
+        <option value="CHACitBack">CHA City (2025 26)</option>
+        <option value="CHIAssBack">CHI - Association</option>
+        <option value="CHIIcoBack">CHI - Icon</option>
+        <option value="CHIStaBack">CHI - Statement</option>
+        <option value="CHICitBack">CHI - City (2025-26)</option>
+        <option value="CLEAssBack">CLE - Association</option>
+        <option value="CLEIcoBack">CLE - Icon</option>
+        <option value="CLEStaBack">CLE - Statement</option>
+        <option value="CLECitBack">CLE - City (2025-26)</option>
+        <option value="CLEClaBack">CLE - Classic (2025-26)</option>
+        <option value="DALAssBack">DAL - Association</option>
+        <option value="DALIcoBack">DAL - Icon</option>
+        <option value="DALStaBack">DAL - Statement</option>
+        <option value="DALCitBack">DAL - City (2025-26)</option>
+        <option value="DALClaBack">DAL - Classic (2025-26)</option>
+        <option value="DENAssBack">DEN - Association</option>
+        <option value="DENIcoBack">DEN - Icon</option>
+        <option value="DENStaBack">DEN - Statement</option>
+        <option value="DENCitBack">DEN - City (2025-26)</option>
+        <option value="DETAssBack">DET - Association</option>
+        <option value="DETIcoBack">DET - Icon</option>
+        <option value="DETStaBack">DET - Statement</option>
+        <option value="DETCitBack">DET - City (2025-26)</option>
+        <option value="GSWAssBack">GSW - Association</option>
+        <option value="GSWIcoBack">GSW - Icon</option>
+        <option value="GSWStaBack">GSW - Statement</option>
+        <option value="GSWCitBack">GSW - City (2025-26)</option>
+        <option value="HOUAssBack">HOU - Association</option>
+        <option value="HOUIcoBack">HOU - Icon</option>
+        <option value="HOUStaBack">HOU - Statement</option>
+        <option value="HOUCitBack">HOU - City (2025-26)</option>
+        <option value="INDAssBack">IND - Association</option>
+        <option value="INDIcoBack">IND - Icon</option>
+        <option value="INDStaBack">IND - Statement</option>
+        <option value="INDCitBack">IND - City (2025-26)</option>
+        <option value="LACAssBack">LAC - Association</option>
+        <option value="LACIcoBack">LAC - Icon</option>
+        <option value="LACStaBack">LAC - Statement</option>
+        <option value="LACCitBack">LAC - City (2025-26)</option>
+        <option value="LALAssBack">LAL - Association</option>
+        <option value="LALIcoBack">LAL - Icon</option>
+        <option value="LALStaBack">LAL - Statement</option>
+        <option value="LALCitBack">LAL - City (2025-26)</option>
+        <option value="MEMAssBack">MEM - Association</option>
+        <option value="MEMIcoBack">MEM - Icon</option>
+        <option value="MEMStaBack">MEM - Statement</option>
+        <option value="MEMCitBack">MEM - City 2025-26</option>
+        <option value="MEMClaBack">MEM - Classic (2025-26)</option>
+        <option value="MIAAssBack">MIA - Association</option>
+        <option value="MIAIcoBack">MIA - Icon</option>
+        <option value="MIAStaBack">MIA - Statement</option>
+        <option value="MIACitBack">MIA - City 2025-26</option>
+        <option value="OKCAssBack">OKC - Association</option>
+        <option value="OKCIcoBack">OKC - Icon</option>
+        <option value="OKCCitBack">OKC - City (2025-26)</option>
+      </select>
+
+      <label for="jerseyNameInput">Name on Jersey</label>
+      <input type="text" name="jerseyNameInput" placeholder="Last name..." id="jerseyNameInput" />
+
+      <label for="jerseyNumberInput">Number</label>
+      <input type="number" name="jerseyNumberInput" placeholder="Number..." id="jerseyNumberInput" />
+
+      <button id="submit" type="button">SUBMIT</button>
+
+      <a id="fullScreen" target="_blank">Full Screen (for screenshots)</a>
+    </form>
+    <div id="jersey">
+      <svg style="max-width: 15vw; max-height: 15vw" viewBox="0 0 400 400" scale="2.5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <path id="textWrap" fill="none" stroke="none" d="M100.5,400.5 v-200 c0-55.23,44.77-100,100-100 h0 c55.23,0,100,44.77,100,100 v200"></path>
+        <text class="name" text-anchor="middle">
+          <textPath xlink:href="#textWrap" id="name" startOffset="50%">YOUR&nbsp;TEXT&nbsp;HERE</textPath>
+        </text>
+      </svg>
+      <p id="number">1</p>
+      <div id="topSide" class="jerseySide"></div>
+      <div id="leftSide" class="jerseySide"></div>
+      <div id="rightSide" class="jerseySide"></div>
+    </div>
+  </body>
+  <script src="app/app.js"></script>
+</html>

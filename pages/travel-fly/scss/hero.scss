@@ -1,0 +1,68 @@
+#hero {
+    height: 500px;
+    width: 100vw;
+    padding-top: 60px;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.333) 0%, rgba(0, 0, 0, 0.333) 100%), url("../img/airplane.jpeg");
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-family: $font-prox;
+    font-style: italic;
+
+    h2 {
+        text-transform: uppercase;
+        font-size: 60px;
+        font-stretch: extra-condensed;
+    }
+
+    p {
+        width: calc($content-width / 2);
+        font-family: $font-gill;
+        font-size: 1.25em;
+        text-align: center;
+    }
+
+    a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 1.25em;
+        font-style: none;
+        color: $white;
+
+        background-color: $med-blue;
+        width: 120px;
+        height: 40px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+#tourHero {
+    max-width: $content-width;
+    width: 100vw;
+    height: 200px;
+    margin-top: 110px;
+
+    background-image: linear-gradient(rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3)100%), url(../img/forest.jpg);
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: $font-prox;
+    font-stretch: extra-condensed;
+    font-style: italic;
+    font-size: 60px;
+    color: $white;
+}

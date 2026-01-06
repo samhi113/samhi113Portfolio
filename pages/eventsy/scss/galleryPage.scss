@@ -1,0 +1,133 @@
+#galleryTitle {
+    max-width: $content-width;
+    width: 100vw;
+    font-weight: 400;
+    text-decoration: underline;
+
+    margin-top: 150px;
+}
+
+#galleryImages {
+    max-width: $content-width;
+    width: 100vw;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    a {
+        background-size: cover;
+        background-position: center;
+    }
+
+    /* The `a:nth-child(-n+3)` selector in the provided SCSS code is targeting the first three `a`
+    elements within the `#galleryImages` container. */
+    a:nth-child(-n+3) {
+        height: 187px;
+    }
+
+    /* The `a:nth-child(n+4)` selector in the SCSS code is targeting every `a` element that is the
+    4th child or any subsequent child within the `#galleryImages` container. */
+    a:nth-child(n+4) {
+        height: 306px;
+        margin-top: 20px;
+        margin-bottom: 55px;
+    }
+
+    a:nth-child(1) {
+        background-image: linear-gradient(rgba($yellow, 0.5) 0%, rgba($yellow, 0.5) 100%), url("../img/gallery/1.png");
+        max-width: 489px;
+        width: 100vw;
+    }
+
+    a:nth-child(2) {
+        background-image: linear-gradient(rgba($pink, 0.5) 0%, rgba($pink, 0.5) 100%), url("../img/gallery/2.jpeg");
+        max-width: 187px;
+        width: 100vw;
+    }
+
+    a:nth-child(3) {
+        background-image: linear-gradient(rgba($reg-green, 0.5) 0%, rgba($reg-green, 0.5) 100%), url("../img/gallery/3.jpg");
+        max-width: 265px;
+        width: 100vw;
+    }
+
+    a:nth-child(4) {
+        background-image: linear-gradient(rgba($purple, 0.5) 0%, rgba($purple, 0.5) 100%), url("../img/gallery/4.jpg");
+        max-width: 603px;
+        width: 100vw;
+    }
+
+    a:nth-child(5) {
+        background-image: linear-gradient(rgba($light-green, 0.5) 0%, rgba($light-green, 0.5) 100%), url("../img/gallery/5.png");
+        max-width: 355px;
+        width: 100vw;
+    }
+}
+
+.galleryHero {
+    max-width: $content-width;
+    width: 100vw;
+    height: 400px;
+    padding-left: 25px;
+    padding-right: 25px;
+
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    margin-top: 150px;
+
+    div {
+        display: flex;
+        align-items: baseline;
+    }
+
+    h3 {
+        font-size: 17.75vw;
+    }
+
+    h4 {
+        font-size: 7.75vw;
+    }
+
+    background-position: center;
+    background-size: cover;
+}
+
+.sideBySide {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+
+    max-width: $content-width;
+    width: 100vw;
+    
+    p {
+        max-width: calc(($content-width / 2) - 15px);
+    }
+}
+
+#galleryHero1 {
+    color: $yellow;
+    background-image: linear-gradient(rgba($yellow, 0.5) 0%, rgba($yellow, 0.5) 100%), url("../img/gallery/1.png");
+}
+
+#galleryHero2 {
+    color: $pink;
+    background-image: linear-gradient(rgba($pink, 0.5) 0%, rgba($pink, 0.5) 100%), url("../img/gallery/2.jpeg");
+}
+
+#galleryHero3 {
+    color: $reg-green;
+    background-image: linear-gradient(rgba($reg-green, 0.5) 0%, rgba($reg-green, 0.5) 100%), url("../img/gallery/3.jpg");
+}
+
+#galleryHero4 {
+    color: $purple;
+    background-image: linear-gradient(rgba($purple, 0.5) 0%, rgba($purple, 0.5) 100%), url("../img/gallery/4.jpg");
+}
+
+#galleryHero5 {
+    color: $light-green;
+    background-image: linear-gradient(rgba($light-green, 0.5) 0%, rgba($light-green, 0.5) 100%), url("../img/gallery/5.png");
+}

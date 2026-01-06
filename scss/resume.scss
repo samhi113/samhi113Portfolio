@@ -1,0 +1,81 @@
+#resumePage {
+  margin-top: -10vh;
+  #resumeTitle {
+    font-family: var(--font-helvetica);
+    font-size: 7.5vh;
+    line-height: 0;
+    background-color: var(--near-black);
+    color: var(--near-white);
+
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  a, a:visited {
+      line-height: 3vh;
+      font-size: 3vh;
+      color: var(--sea-blue);
+    }
+
+    a:hover, a:visited:hover {
+      font-size: 3.25vh;
+      line-height: 2.5vh;
+      font-weight: bold;
+    }
+
+  #resume {
+    width: 80vw;
+    height: fit-content;
+    padding: 10vw;
+    padding-top: 0;
+    margin-top: 7.5vh;
+
+    background-color: var(--near-white);
+    font-family: "Times New Roman", Times, serif;
+    font-size: 22px;
+    line-height: 0.4em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    *:not(a) {
+      color: var(--near-black);
+    }
+
+    a, a:visited, a:active, a:hover {
+      color: var(--dark-sea-blue);
+    }
+
+    h3 {
+      font-size: 48px;
+    }
+
+    .secTitle {
+      width: 100%;
+      margin-bottom: 0.25vh;
+  
+      text-transform: uppercase;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+  
+    .LR {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    ul {
+      width: 100%;
+      margin-top: -1.5vh;
+  
+      li {
+        line-height: 1.33em;
+      }
+    }
+  }
+}

@@ -1,0 +1,123 @@
+:root {
+  --blue: #1e4488;
+  --light-blue: #8fa2c4;
+  --white: #ffffff;
+  --light-red: #e49097;
+  --red: #c8202f;
+
+  --quick-in: cubic-bezier(0.5, 0, 0.5, 1);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  transition: all 0.25s;
+}
+
+html {
+  background-color: var(--white);
+  color: var(--blue);
+}
+
+nav {
+  width: 100vw;
+  height: calc(5vh + 25px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--blue);
+  color: var(--white);
+
+  font-size: calc(1.5vh + 7.5px);
+}
+
+nav ul {
+  width: 80%;
+  height: 100%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav ul li,
+nav ul li a {
+  width: 15vw;
+  height: 100%;
+
+  list-style-type: none;
+  text-decoration: none;
+  color: var(--white);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul li a:hover {
+  background-color: var(--light-blue);
+}
+
+/* Home Hero */
+
+#hero {
+  min-height: 80vh;
+  width: 80vw;
+  padding: 0 10vw;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#hero h2 {
+  font-size: 40vh;
+  animation: circleFinger 1.5s linear 0s infinite;
+}
+
+@keyframes circleFinger {
+  0%,
+  100% {
+    transform: rotate(15deg);
+  }
+  12.5%,
+  37.5% {
+    transition: rotate(5deg);
+  }
+  25% {
+    transform: rotate(0deg);
+  }
+  62.5%,
+  87.5% {
+    transform: rotate(25deg);
+  }
+  75% {
+    transform: rotate(30deg);
+  }
+}
+
+#hero div {
+  width: 20vw;
+}
+
+#hero .btn {
+  margin-top: 2.5vh;
+  width: 100%;
+  height: calc(10px + 5vh);
+  border-radius: calc(2.5px + 1.25vh);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--blue);
+  color: var(--white);
+  text-decoration: none;
+  font-size: calc(5px + 2.5vh);
+}
+
+#hero .btn:hover {
+  background-color: var(--light-blue);
+}

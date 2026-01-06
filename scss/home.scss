@@ -1,0 +1,325 @@
+#homePage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  #hero {
+    max-width: var(--content-width);
+    width: 100vw;
+    height: 100vh;
+    padding: 0 calc(50vw - (0.5 * var(--content-width)));
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    line-height: 0;
+    background-color: var(--near-black);
+
+    h3 {
+      font-size: calc(2vw + 2.5vh);
+    }
+
+    h2 {
+      font-size: calc(7vw + 4vh);
+      margin-top: calc(1.5vw + 2vh);
+    }
+
+    #roleList {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: calc(-1.5vw + -1.5vh);
+  
+      .role {
+        width: 50%;
+        max-width: calc(var(--content-width) * 0.375);
+        height: calc(2vw + 3vh);
+        max-height: 75px;
+        padding-left: 1vw;
+        margin-bottom: 2vh;
+        border-radius: 11vw;
+  
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+  
+        text-decoration: none;
+  
+        .circle {
+          height: 3vh;
+          aspect-ratio: 1;
+          margin-right: 0.5vw;
+
+          border-radius: 2.5vh;
+          font-size: 50%;
+          line-height: 0;
+      
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      
+          clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0% 100%, 0 50%, 50% 50%, 30% 70%, 45% 85%, 80% 50%, 45% 15%, 30% 30%, 50% 50%, 0 50%);
+        }
+  
+        h3 {
+          font-size: calc(1.25vw + 1.25vh);
+        }
+      }
+  
+      .role:hover {
+        .circle {
+          background-color: var(--near-black) !important;
+          font-weight: bold;
+        }
+  
+        h3 {
+          color: var(--near-black);
+        }
+      }
+  
+      .role:nth-child(1) {
+        border: 2px solid var(--red);
+        background-color: transparent;
+  
+        .circle {
+          background-color: var(--red);
+        }
+      }
+  
+      .role:nth-child(1):hover {
+        background-color: var(--red);
+      }
+  
+      .role:nth-child(2) {
+        border: 2px solid var(--yellow);
+        background-color: transparent;
+  
+        .circle {
+          background-color: var(--yellow);
+        }
+      }
+  
+      .role:nth-child(2):hover {
+        background-color: var(--yellow);
+      }
+  
+      .role:nth-child(3) {
+        border: 2px solid var(--sea-blue);
+        background-color: transparent;
+  
+        .circle {
+          background-color: var(--sea-blue);
+        }
+      }
+  
+      .role:nth-child(3):hover {
+        background-color: var(--sea-blue);
+      }
+    }
+  }
+
+  #about {
+    padding: 20vw;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+
+    width: 60vw;
+    height: calc(90vh - 50px - 5vh);
+
+    background-color: var(--near-black);
+    background: linear-gradient(0deg, #dddddddd 0%, #dddddddd 100%), url("../files/subwayEntr.svg"), linear-gradient(0deg, #ddd 0%, #ddd 100%);
+    background-position: bottom center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    .LRContainer {
+      width: 100%;
+      max-width: var(--content-width);
+      display: flex;
+      justify-content: space-between;
+    }
+
+    h3, p {
+      text-shadow: 0 0 10px var(--near-white);
+    }
+    
+    #aboutImg {
+      width: 30%;
+      aspect-ratio: 0.625;
+
+      box-shadow: 0 0 12.5px var(--off-black);
+
+      object-fit: cover;
+      object-position: right bottom;
+    }
+    
+    .aboutText {
+      width: 60%;
+      font-size: calc(1vw + 1vh);
+
+      * {
+        color: var(--near-black);
+      }
+    }
+  }
+
+  #photoScroll {
+    width: 100vw;
+    height: 20vh;
+
+    background-image: linear-gradient(90deg, var(--red) 0%, var(--red) 5%, var(--yellow) 28.333%, var(--yellow) 38.333%, var(--sea-blue) 61.667%, var(--sea-blue) 71.667%, var(--red) 95%, var(--red) 100%);
+    background-repeat: repeat-x;
+    background-size: 300%;
+    animation: scrollAnim 40s infinite linear;
+  }
+
+  @keyframes scrollAnim {
+    from {
+      background-position-x: 900vw;
+    }
+    to {
+      background-position-x: 0vw;
+    }
+  }
+
+  .lowerSec {
+    width: 100%;
+
+    padding-bottom: 5vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    .lowerSecTitle {
+      border-color: var(--near-black);
+    }
+
+    h3 {
+      max-width: 80vw;
+      width: 100%;
+      border-bottom: solid calc(0.1vw + 0.1vh) var(--near-black);
+      display: flex;
+      justify-content: center;
+    
+      font-size: calc(1.5vh + 3vw);
+      font-weight: bolder;
+      color: var(--near-black);
+    }
+
+    .threeCont {
+      width: 80vw;
+      margin-top: -5vh;
+      margin-bottom: 5vh;
+      display: flex;
+      justify-content: space-between;
+
+      .section {
+        max-width: calc(var(--content-width) / 3);
+        width: 25vw;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h3 {
+          font-size: calc(1.4vh + 1.4vw);
+          border: 0 solid transparent;
+        }
+
+        p {
+          color: var(--near-black);
+          font-size: calc(1vh + 1vw);
+          line-height: calc(1.175vh + 1.175vw);
+          min-height: calc(12 * (1vh + 1vw));
+          margin-top: -1.5vh;
+        }
+
+        a {
+          width: 100%;
+          height: 7.5vh;
+        
+          background-color: transparent;
+          border: calc(0.1vh + 0.1vw) solid var(--near-black);
+          border-radius: 4vh;
+        
+          font-size: calc(1vw + 1vh);
+          text-decoration: none;
+          color: var(--near-black);
+        
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        a:hover {
+          font-size: calc(1.1vh + 1.1vw);
+          font-weight: bold;
+        }
+      }
+
+      .section:nth-child(1) {
+        a {
+          border-color: var(--red);
+        }
+
+        a:hover {
+          background-color: var(--red);
+        }
+      }
+
+      .section:nth-child(2) {
+        a {
+          border-color: var(--yellow);
+        }
+
+        a:hover {
+          background-color: var(--yellow);
+        }
+      }
+
+      .section:nth-child(3) {
+        a {
+          border-color: var(--sea-blue);
+        }
+
+        a:hover {
+          background-color: var(--sea-blue);
+        }
+      }
+    }
+  }
+
+  #contact {
+    background-color: var(--near-black);
+
+    *:not(a:hover) {
+      color: var(--near-white);
+    }
+
+    .lowerSecTitle {
+      border-color: var(--near-white);
+    }
+  }
+
+  #projects {
+    background-color: var(--near-white);
+    background: linear-gradient(0deg, #ddddddee 0%, #ddddddee 100%), url("../files/subwayStation.svg");
+    background-position: bottom center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  #contact *::selection, #hero *::selection {
+    background-color: var(--near-white);
+    color: var(--near-black);
+  }
+
+  #projects *::selection, #about *::selection {
+    background-color: var(--near-black);
+    color: var(--near-white);
+  }
+}

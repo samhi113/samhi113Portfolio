@@ -1,0 +1,19 @@
+{
+  "name": "2024portfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "serve": "live-server",
+    "compile": "sass scss/styles.scss css/styles.css -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.79.4"
+  },
+  "dependencies": {
+    "jspdf": "^3.0.1"
+  }
+}

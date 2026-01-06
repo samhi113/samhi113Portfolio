@@ -1,0 +1,55 @@
+nav {
+    position: absolute;
+    top: 0;
+
+    color: $black;
+    font-family: $font-gill;
+    font-weight: lighter;
+
+    max-width: $content-width;
+    width: 100vw;
+    height: 60px;
+
+    border-bottom: solid 1px $black;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .siteLogo {
+        width: 92px;
+        height: 42px;
+        border: solid $black 2px;
+        font-size: calc(15px + 0.5vw);
+
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .links {
+        width: 500px;
+        font-size: calc(10px + 0.4vw);
+        display: flex;
+        justify-content: flex-end;
+
+        a {
+            text-decoration: none;
+            color: $black;
+        }
+
+        .link {
+            padding-left: 19.5px;
+            padding-right: 19.5px;
+            border-right: solid $med-blue 1px;
+        }
+        
+        .lastLink {
+        padding-right: 0px;
+        border-right: none;
+        }
+    }
+
+    
+}

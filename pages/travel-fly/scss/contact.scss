@@ -1,0 +1,98 @@
+#conTitle {
+    margin-top: 160px;
+    max-width: $content-width;
+    width: 100vw;
+
+    color: $black;
+    
+    h2 {
+        font-family: $font-prox;
+        font-stretch: extra-condensed;
+        font-style: italic;
+        font-size: 30px;
+        font-weight: lighter;
+
+        width: fit-content;
+        margin-left: 15px;
+        padding-right: 5px;
+        margin-top: -47px;
+        border-bottom: 1px solid $black;
+    }
+}
+
+#contactList {
+    width: 100vw;
+    max-width: $content-width;
+    margin-bottom: 85px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    * {
+        margin: 10px;
+    }
+
+    div.flexCol {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #leftContact {
+        max-width: 400px;
+        width: 100vw;
+        min-width: 200px;
+
+        iframe {
+            height: 442px;
+            max-width: 400px;
+            width: 100vw;
+            min-width: 200px;
+            margin-bottom: 34px;
+        }
+
+        p {
+            font-family: $font-gill;
+            font-weight: lighter;
+            font-size: 18px;
+            line-height: 10px;
+            margin: 6px;
+        }
+    }
+
+    #rightContact {
+        max-width: 525px;
+        width: 100vw;
+        min-width: 250px;
+
+        input {
+            border: 0 solid transparent;
+            font-family: $font-gill;
+            font-size: 16px;
+        }
+
+        .small {
+            height: 60px;
+        }
+        
+        .large {
+            height: 200px;
+        }
+
+        a.sendMsgBtn {
+            width: 167px;
+            height: 60px;
+
+            background-color: $med-blue;
+            color: $white;
+            font-family: $font-gill;
+            font-size: 16px;
+            text-transform: uppercase;
+            text-decoration: none;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}

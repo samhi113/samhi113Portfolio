@@ -1,0 +1,26 @@
+#footer {
+    background-color: var(--near-black);
+    color: var(--near-white);
+  
+    width: 80vw;
+    height: 8vh;
+    padding: 2vh 10vw;
+  
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    #botBreadcrumb {
+        background-color: var(--near-white);
+        height: 8vh;
+        aspect-ratio: 1;
+        border-radius: 4vh;
+      
+        clip-path: polygon(0% 0%, 0% 100%, 50% 100%, 50% 55%, 30% 75%, 10% 55%, 50% 15%, 90% 55%, 70% 75%, 50% 55%, 50% 100%, 100% 100%, 100% 0%);
+    }
+
+    #botBreadcrumb:hover {
+        background-color: var(--white);
+    }
+}
+  

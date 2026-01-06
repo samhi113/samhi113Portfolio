@@ -1,0 +1,99 @@
+@font-face {
+  font-family: "Indivisible1";
+  src: local("Indivisible"), url("./IndivisibleWebVF.woff2");
+}
+
+@font-face {
+  font-family: "Tungsten1";
+  src: local("Tungsten"), url("./Tungsten-Semibold.woff2");
+}
+
+@font-face {
+  font-family: "Futura1";
+  src: local("Futura"), url("./futura.ttf");
+}
+
+@font-face {
+  font-family: "Knicks";
+  src: url("./NBAKNICK.TTF");
+}
+
+@font-face {
+  font-family: "Celtics";
+  src: url("./NBACELTI.TTF");
+}
+
+@font-face {
+  font-family: "Trailblazers";
+  src: url("./NBATRAIL.TTF");
+}
+
+@font-face {
+  font-family: "Hornets";
+  src: url("./NBA_Hornets_Buzz_City.ttf");
+}
+
+@font-face {
+  font-family: "Bulls";
+  src: url("./NBACELTI.TTF");
+}
+
+@font-face {
+  font-family: "Cavaliers";
+  src: url("./NBA\ Cavaliers.ttf");
+}
+
+@font-face {
+  font-family: "Mavericks";
+  src: url("./NBAMAVER.TTF");
+}
+
+@font-face {
+  font-family: "TW Cen";
+  src: url("./TCB_____.TTF");
+}
+
+@font-face {
+  font-family: "Nuggets";
+  src: url("./NBANUGGE.TTF");
+}
+
+@font-face {
+  font-family: "Pistons";
+  src: url("./NBA\ Pistons.ttf");
+}
+
+@font-face {
+  font-family: "Alata";
+  src: url("./Alata-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Agency1";
+  src: local("Agency FB"), url("./AGENCYR.TTF");
+}
+
+@font-face {
+  font-family: "Intercom";
+  src: url("./Intercom_Semibold.otf");
+}
+
+@font-face {
+  font-family: "Lakers";
+  src: url("./NBALAKER.TTF");
+}
+
+@font-face {
+  font-family: "Grizzlies";
+  src: url("./NBAGRIZZ.TTF");
+}
+
+@font-face {
+  font-family: "Heat";
+  src: url("./NBAHEAT_.TTF");
+}
+
+@font-face {
+  font-family: "Assiduous1";
+  src: local("Assiduous"), url("./Assiduous.ttf");
+}

@@ -1,0 +1,132 @@
+#bookForm {
+    max-width: $content-width;
+    width: 100vw;
+    margin-top: 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    color: $black;
+    font-family: $font-gill;
+    font-weight: lighter;
+
+    h3 {
+        font-family: $font-prox;
+        font-weight: normal;
+        font-size: 60px;
+    }
+
+    .inputs {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        input {
+            height: 58px;
+            margin-bottom: 20px;
+            background-color: $input-gray;
+
+            font-family: $font-gill;
+            font-weight: lighter;
+            font-size: 18px;
+            color: $black;
+
+            border: solid 2px $med-blue;
+            border-radius: 0;
+        }
+
+        .small {
+            max-width: 344px;
+            width: 100%;
+        }
+
+        .large {
+            max-width: 453px;
+            width: 100%;
+        }
+
+        .dateSec {
+            max-width: $content-width;
+            width: 100%;
+
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+            justify-content: space-between;
+
+            h4 {
+                font-size: 18px;
+                font-weight: lighter;
+            }
+
+            input {
+                max-width: 700px;
+                width: 100%;
+            }
+        }
+
+        .dropdowns {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            div {
+                max-width: 300px;
+                width: 33%;
+                height: 58px;
+                display: flex;
+                align-items: baseline;
+                
+                h4, select {
+                    color: $black;
+                    font-family: $font-gill;
+                    font-weight: lighter;
+                    font-size: 18px;
+                }
+
+                select {
+                    margin-left: 10px;
+                    width: 100%;
+                    height: 100%;
+
+                    border: 2px solid $med-blue;
+
+                    option {
+                        color: $black;
+                        font-family: $font-gill;
+                        font-weight: lighter;
+                    }
+                }
+            }
+        }
+
+        #messageText {
+            width: 100%;
+            height: 192px;
+
+            margin-top: 20px;
+            text-align: left;
+            color: $black;
+        }
+
+        .submitBtn {
+            width: 100%;
+            height: 60px;
+            border-radius: 30px;
+            margin-bottom: 100px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            text-transform: uppercase;
+            text-decoration: none;
+            font-size: 15px;
+
+            background-color: $med-blue;
+            color: $white;
+        }
+    }
+} /*End of #bookForm*/

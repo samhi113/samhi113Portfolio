@@ -1,0 +1,91 @@
+#specTitle {
+    margin-top: 160px;
+    max-width: $content-width;
+    width: 100%;
+
+    color: $black;
+    
+    h2 {
+        font-family: $font-prox;
+        font-stretch: extra-condensed;
+        font-style: italic;
+        font-size: 30px;
+        font-weight: lighter;
+
+        width: fit-content;
+        padding-right: 5px;
+        margin-left: 5px;
+        margin-top: -47px;
+        border-bottom: 1px solid $black;
+    }
+}
+
+.specialList {
+    width: 100vw;
+    max-width: $content-width;
+
+    .special {
+        display: flex;
+        align-items: center;
+        font-family: $font-gill;
+        margin-bottom: 60px;
+        padding-left: 5px;
+
+        img {
+            width: 200px;
+            height: 287px;
+            margin-right: 20px;
+            object-fit: cover;
+        }
+
+        div.flexCol {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            width: 300px;
+
+            a {
+                background-color: $med-blue;
+
+                text-decoration: none;
+                font-family: $font-gill;
+                font-size: 15px;
+                text-transform: uppercase;
+                color: $white;
+
+                width: 133px;
+                height: 40px;
+                border-radius: 20px;
+                margin-top: 40px;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        div.flexRow {
+            display: flex;
+            flex-direction: row;
+            align-items: baseline;
+            font-family: $font-prox;
+
+            h3 {
+                font-size: 30px;
+                font-weight: lighter;
+                font-stretch: extra-condensed;
+
+                border-bottom: 1px solid $black;
+            }
+
+            p {
+                margin-left: 5px;
+                font-size: 20px;
+                color: $spec-orange;
+                font-weight: lighter;
+                font-stretch: extra-condensed;
+            }
+        }
+    }
+}

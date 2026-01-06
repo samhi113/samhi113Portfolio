@@ -1,0 +1,55 @@
+@font-face {
+    font-family: "Helvetica";
+    src: url("fonts/helveticaStandard.woff2");
+}
+  
+:root {
+    --black: #000;
+    --near-black: #222;
+    --near-black-trans: #22222240;
+    --off-black: #555;
+    --off-white: #aaa;
+    --near-white: #ddd;
+    --white: #fff;
+    --sea-blue: #5cf;
+    --dark-sea-blue: #258;
+    --yellow: #fc5;
+    --dark-yellow: #ca4;
+    --red: #f55;
+    --dark-red: #822;
+  
+    --content-width: 1150px;
+  
+    --quick-in: cubic-bezier(0, 0.75, 0.25, 1);
+  
+    --font-helvetica: "Helvetica", sans-serif;
+}
+  
+* {
+    transition: all 0.25s var(--quick-in);
+    color: var(--near-white);
+    
+    scroll-margin-top: calc(50px + 2.5vh);
+}
+  
+html {
+    font-family: var(--font-helvetica);
+    background-color: var(--near-black);
+  
+    max-width: 100vw;
+    min-height: 100vh;
+
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+  
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+
+    #app {
+        width: 100vw;
+    }
+}

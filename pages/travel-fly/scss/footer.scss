@@ -1,0 +1,51 @@
+footer {
+    width: 100vw;
+    height: 100px;
+
+    padding-left: 10vw;
+    padding-right: 10vw;
+
+    background-color: $med-blue;
+    font-family: $font-gill;
+    color: $white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .siteLogo {
+        width: 92px;
+        height: 42px;
+        border: solid $white 2px;
+        font-size: 1.4em;
+
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    .socials i {
+        font-size: 22.5px;
+        margin-left: 1.5vw;
+    }
+}
+
+@media (width >= 1080px) {
+    footer {
+        padding-left: 150px;
+        padding-right: 150px;
+        font-size: 1em;
+    }
+}
+
+@media (width < 1080px) {
+    footer {
+        padding-left: calc(25px + 1vw);
+        padding-right: calc(25px + 1vw);
+        font-size: 0.75em;
+    }
+}

@@ -1,0 +1,159 @@
+<link rel="stylesheet" href="css/homeNav.css" />
+<div id="hero">
+  <h2>Travel-Fly</h2>
+  <p>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore
+    explicabo tempora labore. Iusto, quam?
+  </p>
+  <a href="#home">Read More</a>
+</div>
+
+<div id="locations">
+  <div
+    class="location"
+    style="
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.3) 0%,
+          rgba(0, 0, 0, 0.3) 100%
+        ),
+        url(img/israel.jpg);
+    "
+  >
+    <div>
+      <h3>ISRAEL</h3>
+      <p>From $1000</p>
+    </div>
+    <a href="#israel">Read More</a>
+  </div>
+
+  <div
+    class="location"
+    style="
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.3) 0%,
+          rgba(0, 0, 0, 0.3) 100%
+        ),
+        url(img/usa.jpg);
+    "
+  >
+    <div>
+      <h3>USA</h3>
+      <p>From $1500</p>
+    </div>
+    <a href="#usa">Read More</a>
+  </div>
+
+  <div
+    class="location"
+    style="
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.3) 0%,
+          rgba(0, 0, 0, 0.3) 100%
+        ),
+        url(img/australia.jpg);
+    "
+  >
+    <div>
+      <h3>AUSTRALIA</h3>
+      <p>From $1800</p>
+    </div>
+    <a href="#australia">Read More</a>
+  </div>
+</div>
+
+<div id="bookForm">
+  <h3>Booking Form</h3>
+
+  <div class="inputs">
+    <input
+      type="text"
+      name="name"
+      id="nameText"
+      placeholder="name..."
+      class="small"
+    />
+    <input
+      type="email"
+      name="email"
+      id="emailText"
+      placeholder="email..."
+      class="large"
+    />
+    <input
+      type="text"
+      name="country"
+      id="countryText"
+      placeholder="country..."
+      class="small"
+    />
+    <input
+      type="tel"
+      name="phone"
+      id="phoneText"
+      placeholder="phone..."
+      class="large"
+    />
+
+    <div id="checkIn" class="dateSec">
+      <h4>Check-in</h4>
+      <input type="date" name="checkIn" id="checkInText" />
+    </div>
+
+    <div id="checkOut" class="dateSec">
+      <h4>Check-out</h4>
+      <input type="date" name="checkOut" id="checkOutText" />
+    </div>
+
+    <div class="dropdowns">
+      <div class="adults">
+        <h4>Adults</h4>
+        <select name="Adults" id="adultSelect">
+          <option name="0" id="0adult">0</option>
+          <option name="1" id="1adult">1</option>
+          <option name="2" id="2adult">2</option>
+          <option name="3" id="3adult">3</option>
+          <option name="4" id="4adult">4</option>
+          <option name="5" id="5adult">5</option>
+          <option name="6" id="6adult">6</option>
+          <option name="7" id="7adult">7</option>
+          <option name="8" id="8adult">8</option>
+          <option name="9" id="9adult">9</option>
+          <option name="10" id="10adult">10</option>
+        </select>
+      </div>
+
+      <div class="children">
+        <h4>Children</h4>
+        <select name="children" id="childrenSelect">
+          <option name="0" id="0children">0</option>
+          <option name="1" id="1children">1</option>
+          <option name="2" id="2children">2</option>
+          <option name="3" id="3children">3</option>
+          <option name="4" id="4children">4</option>
+          <option name="5" id="5children">5</option>
+          <option name="6" id="6children">6</option>
+          <option name="7" id="7children">7</option>
+          <option name="8" id="8children">8</option>
+          <option name="9" id="9children">9</option>
+          <option name="10" id="10children">10</option>
+        </select>
+      </div>
+
+      <div class="rooms">
+        <h4>Rooms</h4>
+        <select name="rooms" id="roomSelect">
+          <option name="0" id="0room">0</option>
+          <option name="1" id="1room">1</option>
+          <option name="2" id="2room">2</option>
+          <option name="3" id="3room">3</option>
+          <option name="4" id="4room">4</option>
+          <option name="5" id="5room">5</option>
+        </select>
+      </div>
+    </div>
+
+    <input type="text" id="messageText" placeholder="message..." />
+
+    <a href="#home" class="submitBtn">Submit</a>
+  </div>
+</div>

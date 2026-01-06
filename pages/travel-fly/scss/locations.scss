@@ -1,0 +1,59 @@
+#locations, .locationRow {
+    display: flex;
+    justify-content: space-between;
+    max-width: $content-width;
+    width: 100vw;
+    height: 304px;
+
+    .location {
+        max-width: 236px;
+        width: 33.333vw;
+        height: 304px;
+        margin-top: -43px;
+
+        background-size: cover;
+        background-position: center;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        color: $white;
+        font-family: $font-prox;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h3 {
+            font-size: calc(15px + 0.75vw);
+            text-transform: uppercase;
+            font-weight: 400;
+        }
+
+        p {
+            font-size: calc(15px + 0.5vw);
+        }
+
+        a {
+            background-color: $med-blue;
+
+            text-decoration: none;
+            font-family: $font-gill;
+            font-size: 15px;
+            text-transform: uppercase;
+            color: $white;
+
+            width: 133px;
+            height: 40px;
+            border-radius: 20px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}

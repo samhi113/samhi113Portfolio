@@ -1,0 +1,92 @@
+.locHero {
+    margin-top: 110px;
+    max-width: $content-width;
+    width: 100vw;
+    height: 413px;
+
+    color: $white;
+    font-family: $font-prox;
+    font-stretch: extra-condensed;
+    font-style: italic;
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    h3 {
+        width: 100%;
+        font-size: calc(10px + 3vw);
+        padding-left: 1vw;
+        text-align: left;
+    }
+
+    h5 {
+        width: 100%;
+        font-size: calc(10px + 1.5vw);
+        padding-right: 1vw;
+        text-align: right;
+    }
+}
+
+.locPics {
+    max-width: $content-width;
+    width: 100vw;
+    height: 347px;
+
+    margin-top: 40px;
+
+    display: flex;
+    justify-content: space-between;
+
+    img {
+        width: 30%;
+        height: 347px;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+.dayDesc {
+    max-width: $content-width;
+    width: 100vw;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    h3 {
+        font-family: $font-prox;
+        font-stretch: extra-condensed;
+        font-style: italic;
+        font-size: 60px;
+        font-weight: lighter;
+
+        width: fit-content;
+        margin-left: 15px;
+        padding-right: 5px;
+        border-bottom: 1px solid $black;
+    }
+
+    p {
+        font-family: $font-gill;
+        font-size: 16px;
+    }
+}
+
+a.locBut {
+    margin-top: 40px;
+    margin-bottom: 80px;
+    width: 133px;
+    height: 40px;
+    border-radius: 20px;
+
+    background-color: $med-blue;
+    color: $white;
+    font-family: $font-gill;
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

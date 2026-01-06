@@ -1,0 +1,13 @@
+nav {
+  color: white;
+
+  border-bottom: solid 1px white;
+
+  .siteLogo {
+    border: solid white 2px;
+  }
+
+  .links a {
+    color: white;
+  }
+}

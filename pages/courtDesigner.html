@@ -1,0 +1,83 @@
+<div id="courtPage">
+  <h2 id="courtTitle">Design a Basketball Court</h2>
+  <div class="lowerSec">
+    <p>
+      Let's design a court! Below, you will see options for background color,
+      line color, court color, and more. After selecting these options, click
+      the finished button to preview your design!
+    </p>
+
+    <h3>Court Options</h3>
+
+    <div class="LRSec">
+      <input
+        type="color"
+        name="Background Color"
+        id="backgroundInput"
+        placeholder="#000000"
+      />
+      <div>
+        <h4>Background Color</h4>
+        <p>
+          This color will be used as the surrounding color outside of the actual
+          court, making it the likely first part of any design a spectator will
+          notice. Feel free to make it vibrant or muted, any color will work
+          beautifully.
+        </p>
+      </div>
+    </div>
+
+    <div class="LRSec">
+      <input
+        type="color"
+        name="Line Color"
+        id="lineInput"
+        placeholder="#000000"
+      />
+      <div>
+        <h4>Line Color</h4>
+        <p>
+          This color will be used as the color throughout the court. As courts
+          are typically lighter wood colors, we recommend a darker or
+          contrasting color to the base court color.
+        </p>
+      </div>
+    </div>
+
+    <div class="LRSec">
+      <input
+        type="color"
+        name="Court Color"
+        id="courtInput"
+        placeholder="#D7AC70"
+      />
+      <div>
+        <h4>Court Color</h4>
+        <p>
+          This color will be used as the base color of the actual court, making
+          it a key aspect of the design. Will your court respect tradition or
+          blaze a new trail?
+        </p>
+      </div>
+    </div>
+
+    <div class="LRSec">
+      <input type="file" name="Court Logo" id="logoInput" />
+      <div>
+        <h4>Center Logo</h4>
+        <p>
+          This logo will stamp the brand of the team on top of the court,
+          marking this as the home of your team. Here is where magic is made.
+          Memories of this hallowed ground will last for centuries. This is our
+          home.
+        </p>
+      </div>
+    </div>
+
+    <button id="submitCourt">Submit</button>
+
+    <iframe src="" frameborder="0" id="pdfPreview"></iframe>
+  </div>
+
+  <script src="./js/courtDesign.js" type="module"></script>
+</div>

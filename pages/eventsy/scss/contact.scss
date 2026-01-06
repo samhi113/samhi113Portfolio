@@ -1,0 +1,54 @@
+#contactHead {
+    width: 90vw;
+    max-width: $content-width;
+    text-decoration: underline;
+    font-weight: lighter;
+    font-size: 25px;
+    margin-top: 150px;
+}
+
+.contactContainer {
+    max-width: $content-width;
+    width: 90vw;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap-reverse;
+
+    .contactForm {
+        display: flex;
+        flex-direction: column;
+    }
+
+    input {
+        width: 90vw;
+        max-width: 529px;
+        height: 60px;
+        margin-bottom: 21px;
+        padding: 10px;
+        border: none;
+        background-color: #F5F5F5;
+    }
+
+    #messageText {
+        height: 200px;
+    }
+
+    button {
+        width: 167px;
+        height: 60px;
+        margin-bottom: 90px;
+
+        background-color: $pink;
+        color: $white;
+        font-size: 16px;
+        border: none;
+    }
+
+    iframe {
+        width: 90vw;
+        max-width: 400px;
+        height: 442px;
+    }
+}
