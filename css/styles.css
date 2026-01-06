@@ -434,7 +434,7 @@ nav #navLinks a:hover {
   line-height: 1.33em;
 }
 
-#designPage, #websitePage, #workPage, #courtPage, #jerseyPage {
+#designPage, #websitePage, #workPage, #courtPage, #jerseyPage, #blogPage {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -443,14 +443,14 @@ nav #navLinks a:hover {
   background-color: var(--near-white);
   color: var(--near-black);
 }
-#designPage *:not(img)::selection, #websitePage *:not(img)::selection, #workPage *:not(img)::selection, #courtPage *:not(img)::selection, #jerseyPage *:not(img)::selection {
+#designPage *:not(img)::selection, #websitePage *:not(img)::selection, #workPage *:not(img)::selection, #courtPage *:not(img)::selection, #jerseyPage *:not(img)::selection, #blogPage *:not(img)::selection {
   background-color: var(--near-black);
   color: var(--near-white);
 }
-#designPage img::selection, #websitePage img::selection, #workPage img::selection, #courtPage img::selection, #jerseyPage img::selection {
+#designPage img::selection, #websitePage img::selection, #workPage img::selection, #courtPage img::selection, #jerseyPage img::selection, #blogPage img::selection {
   background-color: var(--near-white);
 }
-#designPage h2, #websitePage h2, #workPage h2, #courtPage h2, #jerseyPage h2 {
+#designPage h2, #websitePage h2, #workPage h2, #courtPage h2, #jerseyPage h2, #blogPage h2 {
   width: 100vw;
   height: 32vh;
   margin-top: -12vh;
@@ -459,67 +459,76 @@ nav #navLinks a:hover {
   color: var(--near-black);
   font-size: calc(3vw + 2vh);
   font-weight: bolder;
+  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-#designPage #designTitle, #websitePage #designTitle, #workPage #designTitle, #courtPage #designTitle, #jerseyPage #designTitle {
+#designPage #designTitle, #websitePage #designTitle, #workPage #designTitle, #courtPage #designTitle, #jerseyPage #designTitle, #blogPage #designTitle {
   background-image: linear-gradient(180deg, var(--near-black) 30%, var(--red) 50%);
 }
-#designPage #webTitle, #websitePage #webTitle, #workPage #webTitle, #courtPage #webTitle, #jerseyPage #webTitle {
+#designPage #webTitle, #websitePage #webTitle, #workPage #webTitle, #courtPage #webTitle, #jerseyPage #webTitle, #blogPage #webTitle {
   background-image: linear-gradient(180deg, var(--near-black) 30%, var(--yellow) 50%);
 }
-#designPage #workTitle, #websitePage #workTitle, #workPage #workTitle, #courtPage #workTitle, #jerseyPage #workTitle {
+#designPage #workTitle, #websitePage #workTitle, #workPage #workTitle, #courtPage #workTitle, #jerseyPage #workTitle, #blogPage #workTitle {
   background-image: linear-gradient(180deg, var(--near-black) 30%, var(--sea-blue) 50%);
 }
-#designPage #courtTitle, #websitePage #courtTitle, #workPage #courtTitle, #courtPage #courtTitle, #jerseyPage #courtTitle {
+#designPage #courtTitle, #websitePage #courtTitle, #workPage #courtTitle, #courtPage #courtTitle, #jerseyPage #courtTitle, #blogPage #courtTitle {
   background-image: linear-gradient(180deg, var(--near-black) 30%, var(--near-black-trans) 50%), url("../files/courtDesign/courtFloor.jpeg");
-  background-size: cover;
 }
-#designPage #jerseyTitle, #websitePage #jerseyTitle, #workPage #jerseyTitle, #courtPage #jerseyTitle, #jerseyPage #jerseyTitle {
+#designPage #jerseyTitle, #websitePage #jerseyTitle, #workPage #jerseyTitle, #courtPage #jerseyTitle, #jerseyPage #jerseyTitle, #blogPage #jerseyTitle {
   background-image: linear-gradient(180deg, var(--near-black) 30%, var(--near-black-trans) 50%), url("../files/courtDesign/courtFloor.jpeg");
-  background-size: cover;
 }
-#designPage .lowerSec, #websitePage .lowerSec, #workPage .lowerSec, #courtPage .lowerSec, #jerseyPage .lowerSec {
+#designPage #blogTitle, #websitePage #blogTitle, #workPage #blogTitle, #courtPage #blogTitle, #jerseyPage #blogTitle, #blogPage #blogTitle {
+  background-image: linear-gradient(180deg, var(--near-black) 30%, #fdb 50%);
+}
+#designPage .lowerSec, #websitePage .lowerSec, #workPage .lowerSec, #courtPage .lowerSec, #jerseyPage .lowerSec, #blogPage .lowerSec {
   width: 80vw;
   display: flex;
   flex-direction: column;
 }
-#designPage .lowerSec h3, #websitePage .lowerSec h3, #workPage .lowerSec h3, #courtPage .lowerSec h3, #jerseyPage .lowerSec h3 {
+#designPage .lowerSec h3, #websitePage .lowerSec h3, #workPage .lowerSec h3, #courtPage .lowerSec h3, #jerseyPage .lowerSec h3, #blogPage .lowerSec h3 {
   margin-bottom: -2vh;
   border-bottom: calc(0.25vh + 0.25vw) solid var(--near-black);
   color: var(--near-black);
   font-size: calc(1vh + 2vw);
   font-weight: bolder;
 }
-#designPage .lowerSec .LRSec, #websitePage .lowerSec .LRSec, #workPage .lowerSec .LRSec, #courtPage .lowerSec .LRSec, #jerseyPage .lowerSec .LRSec {
+#designPage .lowerSec .LRSec, #websitePage .lowerSec .LRSec, #workPage .lowerSec .LRSec, #courtPage .lowerSec .LRSec, #jerseyPage .lowerSec .LRSec, #blogPage .lowerSec .LRSec {
   width: 100%;
   min-height: calc(10vh + 10vw);
+  height: fit-content;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-#designPage .lowerSec .LRSec img, #websitePage .lowerSec .LRSec img, #workPage .lowerSec .LRSec img, #courtPage .lowerSec .LRSec img, #jerseyPage .lowerSec .LRSec img {
+#designPage .lowerSec .LRSec img, #websitePage .lowerSec .LRSec img, #workPage .lowerSec .LRSec img, #courtPage .lowerSec .LRSec img, #jerseyPage .lowerSec .LRSec img, #blogPage .lowerSec .LRSec img {
+  margin-top: 5vh;
   width: 35%;
+  max-height: 40vh;
+  border-radius: 2.5vh;
   object-fit: contain;
 }
-#designPage .lowerSec .LRSec h4, #websitePage .lowerSec .LRSec h4, #workPage .lowerSec .LRSec h4, #courtPage .lowerSec .LRSec h4, #jerseyPage .lowerSec .LRSec h4 {
+#designPage .lowerSec .LRSec img:hover, #websitePage .lowerSec .LRSec img:hover, #workPage .lowerSec .LRSec img:hover, #courtPage .lowerSec .LRSec img:hover, #jerseyPage .lowerSec .LRSec img:hover, #blogPage .lowerSec .LRSec img:hover {
+  border-radius: 5vh;
+}
+#designPage .lowerSec .LRSec h4, #websitePage .lowerSec .LRSec h4, #workPage .lowerSec .LRSec h4, #courtPage .lowerSec .LRSec h4, #jerseyPage .lowerSec .LRSec h4, #blogPage .lowerSec .LRSec h4 {
   width: 44vw;
   color: var(--near-black);
   font-size: calc(1.25vh + 1.25vw);
 }
-#designPage .lowerSec .LRSec p, #websitePage .lowerSec .LRSec p, #workPage .lowerSec .LRSec p, #courtPage .lowerSec .LRSec p, #jerseyPage .lowerSec .LRSec p {
+#designPage .lowerSec .LRSec p, #websitePage .lowerSec .LRSec p, #workPage .lowerSec .LRSec p, #courtPage .lowerSec .LRSec p, #jerseyPage .lowerSec .LRSec p, #blogPage .lowerSec .LRSec p {
   width: 44vw;
   color: var(--near-black);
   font-size: calc(1vh + 1vw);
 }
-#designPage .lowerSec .LRSec .vertSec, #websitePage .lowerSec .LRSec .vertSec, #workPage .lowerSec .LRSec .vertSec, #courtPage .lowerSec .LRSec .vertSec, #jerseyPage .lowerSec .LRSec .vertSec {
+#designPage .lowerSec .LRSec .vertSec, #websitePage .lowerSec .LRSec .vertSec, #workPage .lowerSec .LRSec .vertSec, #courtPage .lowerSec .LRSec .vertSec, #jerseyPage .lowerSec .LRSec .vertSec, #blogPage .lowerSec .LRSec .vertSec {
   width: 55%;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
-#designPage .lowerSec .LRSec .vertSec .webBtn, #websitePage .lowerSec .LRSec .vertSec .webBtn, #workPage .lowerSec .LRSec .vertSec .webBtn, #courtPage .lowerSec .LRSec .vertSec .webBtn, #jerseyPage .lowerSec .LRSec .vertSec .webBtn {
+#designPage .lowerSec .LRSec .vertSec .webBtn, #websitePage .lowerSec .LRSec .vertSec .webBtn, #workPage .lowerSec .LRSec .vertSec .webBtn, #courtPage .lowerSec .LRSec .vertSec .webBtn, #jerseyPage .lowerSec .LRSec .vertSec .webBtn, #blogPage .lowerSec .LRSec .vertSec .webBtn {
   width: calc(10vw + 7.5vh);
   height: 7.5vh;
   background-color: var(--yellow);
@@ -531,12 +540,12 @@ nav #navLinks a:hover {
   justify-content: center;
   align-items: center;
 }
-#designPage .lowerSec .LRSec .vertSec .webBtn:hover, #websitePage .lowerSec .LRSec .vertSec .webBtn:hover, #workPage .lowerSec .LRSec .vertSec .webBtn:hover, #courtPage .lowerSec .LRSec .vertSec .webBtn:hover, #jerseyPage .lowerSec .LRSec .vertSec .webBtn:hover {
+#designPage .lowerSec .LRSec .vertSec .webBtn:hover, #websitePage .lowerSec .LRSec .vertSec .webBtn:hover, #workPage .lowerSec .LRSec .vertSec .webBtn:hover, #courtPage .lowerSec .LRSec .vertSec .webBtn:hover, #jerseyPage .lowerSec .LRSec .vertSec .webBtn:hover, #blogPage .lowerSec .LRSec .vertSec .webBtn:hover {
   font-size: calc(1.1vh + 1.1vw);
   font-weight: bolder;
   border-radius: 2vh;
 }
-#designPage iframe, #websitePage iframe, #workPage iframe, #courtPage iframe, #jerseyPage iframe {
+#designPage iframe, #websitePage iframe, #workPage iframe, #courtPage iframe, #jerseyPage iframe, #blogPage iframe {
   width: 60vw;
   height: 80vh;
 }
