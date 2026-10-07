@@ -120,21 +120,21 @@ nav #navLinks a:hover {
 }
 #homePage #hero {
   max-width: var(--content-width);
-  width: 100vw;
-  height: 100vh;
-  padding: 0 calc(50vw - 0.5 * var(--content-width));
+  width: 80vw;
+  min-height: 80vh;
+  padding: 10vw 10vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  line-height: 0;
   background-color: var(--near-black);
 }
 #homePage #hero h3 {
   font-size: calc(2vw + 2.5vh);
+  margin: 0;
 }
 #homePage #hero h2 {
   font-size: calc(7vw + 4vh);
-  margin-top: calc(1.5vw + 2vh);
+  margin: 0 0 5vh;
 }
 #homePage #hero #roleList {
   display: flex;
@@ -241,6 +241,12 @@ nav #navLinks a:hover {
 }
 #homePage #about .aboutText * {
   color: var(--near-black);
+  letter-spacing: 4%;
+  text-wrap: pretty;
+}
+#homePage #about .aboutText a:hover {
+  font-weight: bold;
+  letter-spacing: 6%;
 }
 #homePage #photoScroll {
   width: 100vw;
@@ -343,6 +349,9 @@ nav #navLinks a:hover {
 }
 #homePage #contact {
   background-color: var(--near-black);
+  background-position: bottom center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 #homePage #contact *:not(a:hover) {
   color: var(--near-white);
